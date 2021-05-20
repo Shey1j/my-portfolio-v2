@@ -1,2 +1,2 @@
 # my-portfolio-v2
-This is my portfolio created with React and Sass.
+This is my portfolio created with React and TypeScript.
