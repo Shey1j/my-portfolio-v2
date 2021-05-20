@@ -1,0 +1,55 @@
+.sheyi-hero {
+  height: 480px;
+  overflow: hidden;
+}
+
+.sheyi-hero-background {
+  height: 100%;
+  box-shadow: 4px 3px 4px 0 #8080807d;
+}
+
+#tsparticles {
+  height: 100%;
+  background: var(--primary-color);
+}
+
+.sheyi-hero-content {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white);
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sheyi-hero {
+    height: 680px;
+  }
+
+  .sheyi-hero-background {
+    height: 85%;
+  }
+
+  .sheyi-hero-content {
+    width: inherit;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-image img {
+    box-shadow: 4px 3px 4px 4px #8080807d;
+    border-bottom-left-radius: 50px;
+  }
+
+  .hero-text h1 {
+    font-weight: 800;
+  }
+}

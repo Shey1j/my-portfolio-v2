@@ -1,0 +1,88 @@
+.sheyi-nav {
+  background: transparent;
+  z-index: 99;
+}
+
+.sheyi-logo {
+  font-size: 30px;
+}
+
+.sheyi-nav .sheyi-logo span {
+  color: var(--color-white);
+}
+
+.sheyi-nav.scroll {
+  background: var(--color-white);
+}
+
+.sheyi-nav.scroll .sheyi-logo span {
+  color: var(--color-black);
+}
+
+.navbar-toggler > div span {
+  background: var(--color-white) !important;
+}
+
+.sheyi-nav.scroll .navbar-toggler > div span {
+  background: var(--color-black) !important;
+}
+
+.nav-item a {
+  color: var(--color-black);
+}
+
+.nav-item a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-toggler {
+  outline: none;
+}
+
+.collapse:not(.show) {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.collapse.show {
+  animation: anim 0.3s ease-in-out;
+  -webkit-animation: anim 0.3s ease-in-out;
+  background-color: #fff;
+  height: 20vh;
+  -webkit-box-shadow: 0 20px 30px 0 rgb(12 0 46 / 10%);
+  box-shadow: 0 20px 30px 0 rgb(12 0 46 / 10%);
+  padding-left: 24px;
+}
+
+.collapse.show .nav-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .sheyi-logo {
+    font-size: 45px;
+  }
+
+  .collapse:not(.show) {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+
+  .collapse.show {
+    background-color: transparent;
+  }
+
+  .sheyi-nav.scroll .nav-item a {
+    color: var(--color-black);
+  }
+
+  .sheyi-nav .nav-item a {
+    color: var(--color-white);
+  }
+
+  .sheyi-nav .nav-item a:hover {
+    color: var(--secondary-color);
+  }
+}
